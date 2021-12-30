@@ -1,1 +1,418 @@
-maintance
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babeku - Beranda</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <!-- outer-sidebar -->
+        <div class="outer-sidebar">
+            <!-- menu -->
+            <div id="side2" class="menu">
+                <button class="xbtnmenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="overflowmenu">&nbsp;</div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="menu-item active">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                                <p class="block">Beranda</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" /></svg>
+                                <p>Barang</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                <p>Kasbon</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#" class="menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                <p>Kasir</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#" class="menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" /></svg>
+                                <p>Piutang</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#" class="menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>
+                                <p>Laporan</p>
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="#" class="menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="my-auto h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                <p>Pengaturan</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- sidebar -->
+            <div class="overflowsidebar">&nbsp;</div>
+            <div id="side" class="sidebar">
+                <button class="xbtnsidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- profile -->
+                <div class="profile">
+                    <img src="./assets/images/moji.png" class="img-profile">
+                    <div class="people">
+                        <p class="name-profile">Khusnul Hatimah Zanitrah</p>
+                        <p class="sub-profile">admin</p>
+                    </div>
+
+                    <button class="more">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- notification -->
+                <div class="notification">
+                    <div class="headings">
+                        <p>Pemberitahuan</p>
+                        <button class="more">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                              </svg>
+                        </button>
+                    </div>
+
+                    <!-- notif -->
+                    <div class="notif">
+
+                        <div class="date">
+                            <p class="heading">Hari Ini</p>
+
+                            <div class="item info">
+                                <p class="people">ML</p>
+                                <div class="text">
+                                    Mu'alif Menambahkan Barang Masuk
+                                </div>
+                            </div>
+
+                            <div class="item success">
+                                <p class="people">ML</p>
+                                <div class="text">
+                                    Mardia Menambahkan 
+                                </div>
+                            </div>
+
+                            <p class="heading">22 Desember 2021</p>
+
+                            <div class="item danger">
+                                <p class="people">ML</p>
+                                <div class="text">
+                                    Mardia Menjual Barang
+                                </div>
+                            </div>
+
+                            <div class="item warning">
+                                <p class="people">ML</p>
+                                <div class="text">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    Lorem ipsum dolor, sit amet consectetur
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- main bg-yellow-400 sm:bg-blue-400 md:bg-red-400 lg:bg-green-400-->
+        <div class="main">
+            <!-- headings and navtop -->
+            <div class="headings">
+                <!-- title -->
+                <h1 class="title">Beranda</h1>
+
+                <!-- button -->
+                <button class="btnmobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <!-- search -->
+                <div class="search">
+                    <input type="text" class="form" placeholder="Cari barang">
+
+                    <button type="submit" class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                          </svg>
+                    </button>
+                </div>
+
+                <!-- profile again -->
+                <button class="profileagain" id="btnprofile">
+                    <img src="./assets/images/moji.png" class="bg-blue-300 rounded-full" width="41.5px">
+                </button>
+            </div>
+
+            <!-- content -->
+            <div class="content">
+                <!-- chart -->
+                <div class="chart">
+                    <!-- weekly -->
+                    <div class="card weekly">
+                        <div class="head-flex">
+                            <span class="text-center">
+                                <p class="sub">Pemasukkan Hari Ini</p>
+                                <h3 class="title large">20.000.000</h3>
+                            </span>
+
+                            <center class="mt-3 text-green-400 flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 mt-0.5 ml-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                                <p class="mr-auto">40%</p>
+                            </center>
+                        </div>
+                        <div class="body-nopading">
+                            <canvas id="chartHarian" class="-mx-1.5 -mb-2" height="100"></canvas>
+                            <div style="background:rgb(239, 246, 255);" class="h-14">&nbsp;</div>
+                        </div>
+                    </div>
+
+                    <!-- monthly -->
+                    <div class="card monthly">
+                        <div class="head">
+                            <h3 class="title">Pemasukkan bulanan</h3>
+                            <a href="#" class="sub">lihat laporan</a>
+                        </div>
+                        <div class="body-nopading ">
+                           <canvas id="chartTahunan" class="-mx-1.5 -mb-2" height="100"></canvas>
+                           <div style="background:rgb(239, 246, 255);" class="h-7">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <!-- shortcut -->
+                <div class="shortcut">
+                    <div class="item card info mr-0 sm:mr-0 md:mr-7 lg:mr-7">
+                        <div class="body text-center text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        
+                            <h3 class="font-bold">Kasir</h3>
+                            <p class="mb-7">Aplikasi Jual Beli</p>
+                            <a href="#" class="btn-more bg-blue-800">Masuk</a>
+                        </div>
+                    </div>
+
+                    <div class="item card success mr-0 sm:mr-0 md:mr-7 lg:mr-7">
+                        <div class="body text-center text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                            </svg>
+
+                            <h3 class="font-bold">Stock Barang</h3>
+                            <p class="mb-7">Mengolah Barang Masuk</p>
+                            <a href="#" class="btn-more bg-green-800">Masuk</a>
+                        </div>
+                    </div>
+
+                    <div class="item card yellow">
+                        <div class="body text-center text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                            </svg>
+                        
+                            <h3 class="font-bold">Laporan Keuangan</h3>
+                            <p class="mb-7">Download Laporan Bulanan</p>
+                            <a href="#" class="btn-more bg-yellow-800">Masuk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- my activity -->
+                <div class="card">
+                    <div class="head">
+                        <h3 class="title">Aktivitasku</h3>
+                        <a href="#" class="link">Lihat Lebih Banyak</a>
+                    </div>
+                    <div class="body-nopading">
+                        <div class="list">
+                            <div class="item bg-gray-100 p-5">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, natus! Est eaque atque iusto aperiam vel voluptatem hic quaerat repudiandae neque provident quo, corrupti velit mollitia amet odio ipsa molestias!
+                            </div>
+                            <div class="item bg-white p-5">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, natus! Est eaque atque iusto aperiam vel voluptatem hic quaerat repudiandae neque provident quo, corrupti velit mollitia amet odio ipsa molestias!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+    // menu 
+    document.querySelector("#btnprofile").addEventListener('click', () =>{
+        document.querySelector('#side').classList.toggle("collapse");
+        document.querySelector('.overflowsidebar').classList.toggle("collapse");
+    });
+    document.querySelector(".xbtnsidebar").addEventListener('click', () =>{
+        document.querySelector('#side').classList.toggle("collapse");
+        document.querySelector('.overflowsidebar').classList.toggle("collapse");
+    });
+    document.querySelector(".overflowsidebar").addEventListener('click', () =>{
+        document.querySelector('#side').classList.toggle("collapse");
+        document.querySelector('.overflowsidebar').classList.toggle("collapse");
+    });
+    
+
+    // sidebar
+    document.querySelector(".btnmobile").addEventListener('click', () =>{
+        document.querySelector('#side2').classList.toggle("collapse");
+    });
+    document.querySelector(".xbtnmenu").addEventListener('click', () =>{
+        document.querySelector('#side2').classList.toggle("collapse");
+    });
+    document.querySelector(".overflowmenu").addEventListener('click', () =>{
+        document.querySelector('#side2').classList.toggle("collapse");
+    });
+
+    // chart
+    let chrthn = document.getElementById("chartTahunan");
+    let chrhr = document.getElementById("chartHarian");
+
+    const bln = ["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Ags","Sep","Okt","Nov"];
+    let asset = [30000,10000,50000,40000,90000,30000,60000,30000,80000,70000,110000];
+
+    let data = {
+        labels:bln,
+        datasets:[{
+            data:asset,
+            fill:true,
+            backgroundColor: "rgb(239, 246, 255)",
+            borderColor: "rgb(96, 165, 250)",
+            borderWidth: 2,
+            tension:0.4
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            maintainAspectRatio: true,
+            plugins:{
+                legend:{
+                    display:false
+                }
+            },
+            elements: {
+                point: {
+                    pointStyle:'rectRounded',
+                    radius: 5
+                },
+            },
+            scales: {
+                x: {
+                    display:false
+                },
+                y: {
+                    display:false
+                }
+            }
+        }
+    };
+
+    const thn = new Chart(
+        chrthn,
+        config
+    );
+
+    const hr = new Chart(
+        chrhr,
+        {
+            type: 'line',
+            data: {
+                labels:["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Ags","Sep","Okt","Nov"],
+                datasets:[{
+                    data:[30000,10000,50000,40000,90000,30000,60000,30000,80000,70000,110000],
+                    fill:true,
+                    backgroundColor: "rgb(239, 246, 255)",
+                    borderColor: "rgb(96, 165, 250)",
+                    borderWidth: 2,
+                    tension:0.4
+                }]
+            },
+            options: {
+                maintainAspectRatio: true,
+                plugins:{
+                    tooltip: {
+                        enabled: false
+                    },
+                    legend:{
+                        display:false
+                    }
+                },
+                elements: {
+                    point: {
+                        radius: 0
+                    }
+                },
+                scales: {
+                    x: {
+                        display:false
+                    },
+                    y: {
+                        display:false
+                    }
+                }
+            }
+        }
+    );
+
+</script>
+
+</html>
