@@ -634,7 +634,7 @@ function App() {
         {loading ? (
           <p className="py-12 text-center text-sm text-slate-400">Memuat data…</p>
         ) : page === "beranda" ? (
-          <div className="space-y-3">
+          <div className="space-y-3 flex flex-col">
             <BerandaCard icon={FileText} title="Input Laporan" desc="Catat LP baru masuk" onClick={() => setPage("input")} />
             <BerandaCard icon={ListChecks} title="Tracking Perkara" desc="Status penanganan tiap LP" count={counts.total} onClick={() => setPage("tracking")} />
             <BerandaCard icon={Clock} title="Tahanan Aktif" desc="Penahanan berjalan — pantau batas waktu" count={counts.tahananAktif} onClick={() => setPage("tahananAktif")} />
